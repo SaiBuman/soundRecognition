@@ -18,9 +18,9 @@ function gotResults(error,results) {
          random_no_b = Math.floor(Math.random()*255)+1;
 
          document.getElementById("result_label").innerHTML = "I can hear - "+results[0].label;
-         document.getElementById("result_confidence").innerHTML = "Accuracy - "+(results[0].confidence*100).toFixed(2);
+         document.getElementById("result_accuracy").innerHTML = "Accuracy - "+(results[0].confidence*100).toFixed(2);
          document.getElementById("result_label").style.color="rgb("+random_no_r+","+random_no_g+","+random_no_b+")";
-         document.getElementById("result_confidence").style.color="rgb("+random_no_r+","+random_no_g+","+random_no_b+")";    }
+         document.getElementById("result_accuracy").style.color="rgb("+random_no_r+","+random_no_g+","+random_no_b+")";    }
          
          img1 = document.getElementById('alien1');
          img2 = document.getElementById('alien2');
